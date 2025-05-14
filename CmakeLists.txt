@@ -1,0 +1,9 @@
+# CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)
+project(MyGreetingApp)
+
+# Add an executable
+add_executable(greeting_app src/main.cpp src/device_utility.cpp)
+
+# Specify the include directory
+target_include_directories(greeting_app PRIVATE include)
